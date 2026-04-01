@@ -6,9 +6,7 @@ import time
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
-# =========================
-# ✅ PRUEBA FELIZ
-# =========================
+#PRUEBA FELIZ
 driver.get("http://localhost/selenium-crud-tests/index.php")
 time.sleep(2)
 
@@ -21,9 +19,7 @@ print("Prueba feliz ejecutada")
 
 time.sleep(2)
 
-# =========================
-# ❌ PRUEBA NEGATIVA
-# =========================
+#PRUEBA NEGATIVA
 driver.get("http://localhost/selenium-crud-tests/index.php")
 time.sleep(2)
 
@@ -36,9 +32,7 @@ print("Prueba negativa ejecutada")
 
 time.sleep(2)
 
-# =========================
-# ⚠️ PRUEBA DE LÍMITE
-# =========================
+#PRUEBA DE LÍMITE
 driver.get("http://localhost/selenium-crud-tests/index.php")
 time.sleep(2)
 
