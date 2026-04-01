@@ -9,6 +9,5 @@ driver.get("http://localhost/selenium-crud-tests/index.php")
 time.sleep(2)
 
 driver.save_screenshot("tests/read.png")
-print("Prueba de lectura ejecutada")
 
 driver.quit()

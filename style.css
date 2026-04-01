@@ -1,42 +1,122 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
-    text-align: center;
-    margin-top: 50px;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Fondo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    background: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos */
 h2 {
+    margin-bottom: 15px;
     color: #333;
 }
 
-form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    margin: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
+/* Inputs */
 input {
-    display: block;
-    width: 90%;
-    margin: 10px auto;
+    width: 45%;
     padding: 10px;
-    border-radius: 5px;
+    margin: 10px 5px;
     border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
 }
 
+input:focus {
+    border-color: #667eea;
+}
+
+/* Botones */
 button {
-    background-color: #007bff;
-    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
     border: none;
-    padding: 10px;
-    width: 95%;
-    border-radius: 5px;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: #5a67d8;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Encabezados */
+th {
+    background: #667eea;
+    color: white;
+    padding: 10px;
+}
+
+/* Filas */
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* Hover fila */
+tr:hover {
+    background: #f5f5f5;
+}
+
+/* Botones de acción */
+a {
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin: 2px;
+    font-size: 14px;
+}
+
+/* Editar */
+a[id="editBtn"] {
+    background: #38a169;
+    color: white;
+}
+
+a[id="editBtn"]:hover {
+    background: #2f855a;
+}
+
+/* Eliminar */
+a[id="deleteBtn"] {
+    background: #e53e3e;
+    color: white;
+}
+
+a[id="deleteBtn"]:hover {
+    background: #c53030;
 }
